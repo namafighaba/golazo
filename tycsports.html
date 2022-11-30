@@ -154,7 +154,8 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
   </a>
 </div>
 <center><h2>Tycsports  en vivo </h2></center>
-
+<input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
 <br>
     <div class="video-container">Loading the player...
  <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="" name="iframe"></iframe>
@@ -162,16 +163,17 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
 <br>
 <center>
   <input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" /> 
+  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-M3U8" /> 
   <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-HD" /> 
     <input class="button" onclick="mostrarMensaje4()" type="button" value="OP-HD" /> 
+ 
   </center><br/>
 <script>
   function mostrarMensaje1() {
 document.getElementById("iframe").src = "//www.tutele.nl/online.php?a=1204"
                           }
 function mostrarMensaje2() {
-document.getElementById("iframe").src = "//tucanaldeportivo.com/tyc.php"
+document.getElementById("iframe").src = "tycm3u8.html"
 }
 function mostrarMensaje3() {
 document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://outisialtaniflo.org/gg.html?uc2&get=aHR0cHM6Ly8xMjQwLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGQ0NWI3OWQ0NDg3MzQzNTg5MDU4YWI0OWRkZjhjZjA=&key2=YWE3Zjk1ZjcxYTNjZmU0MGFhNTk5MDRmOTI4NWFmNzI=")
@@ -194,10 +196,34 @@ function myFunction() {
   }
 }
 </script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
 <footer>
 
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
