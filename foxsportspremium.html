@@ -100,7 +100,7 @@ body {
    
 
 // Define the string
-var string = 'https://outisialtaniflo.org/gg.html?uc2&get=aHR0cHM6Ly8xMTI1LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGNiNDlkZjM0MTQyM2NiNTk3YmYzZTc5Yjc4ZjJhNTI=&key2=MTFhZDY5ZDJjODRmNDFkYmI1MjBhYmZlMzhiMTlmZTc=&aut=true&lang=0';
+var string = 'https://taftwhoteri.org/gg.html?uc2&get=aHR0cHM6Ly8xMTI1LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGNiNDlkZjM0MTQyM2NiNTk3YmYzZTc5Yjc4ZjJhNTI=&key2=MTFhZDY5ZDJjODRmNDFkYmI1MjBhYmZlMzhiMTlmZTc=&aut=true&lang=0';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -130,6 +130,9 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
 </div>
 <center><h2>ESPN PREMIUM  </h2></center>
 
+<br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
 <br>
     <div class="video-container">Loading the player...
 
@@ -171,5 +174,18 @@ function myFunction() {
 
 
 
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

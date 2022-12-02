@@ -127,7 +127,7 @@ body {
    
 
 // Define the string
-var string = 'https://outisialtaniflo.org/gg.html?uc2&get=Ly9jaGFubmVsLWFmaXp6aW9uYWRvcy1jZG4uYmxpbS5jb20vbWFuaWZlc3QubXBk&key=NGFlMTBjMjM1N2UyNTBlMDg4YmI4YTVhYjA0NGRkNTA=&key2=ZTdmNDdlMmI5NDhlOTIyMmNmNGQyNGI1MTg4MWVjMDQ=&lang=0';
+var string = 'https://taftwhoteri.org/gg.html?uc2&get=Ly9jaGFubmVsLWFmaXp6aW9uYWRvcy1jZG4uYmxpbS5jb20vbWFuaWZlc3QubXBk&key=NGFlMTBjMjM1N2UyNTBlMDg4YmI4YTVhYjA0NGRkNTA=&key2=ZTdmNDdlMmI5NDhlOTIyMmNmNGQyNGI1MTg4MWVjMDQ=&lang=0';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -158,6 +158,9 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
 <center><h2>Afizzionados EN VIVO POR INTERNET </h2></center>
 
 <br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
   
       <iframe width="100%" id="iframe" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src=""></iframe>
@@ -177,7 +180,7 @@ document.getElementById("iframe").src = "afizzionadosjw_embed.html"
 
 }
 function mostrarMensaje2() {
-document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://outisialtaniflo.org/gg.html?uc2&get=Ly9jaGFubmVsLWFmaXp6aW9uYWRvcy1jZG4uYmxpbS5jb20vbWFuaWZlc3QubXBk&key=NGFlMTBjMjM1N2UyNTBlMDg4YmI4YTVhYjA0NGRkNTA=&key2=ZTdmNDdlMmI5NDhlOTIyMmNmNGQyNGI1MTg4MWVjMDQ=&lang=0")
+document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://taftwhoteri.org/gg.html?uc2&get=Ly9jaGFubmVsLWFmaXp6aW9uYWRvcy1jZG4uYmxpbS5jb20vbWFuaWZlc3QubXBk&key=NGFlMTBjMjM1N2UyNTBlMDg4YmI4YTVhYjA0NGRkNTA=&key2=ZTdmNDdlMmI5NDhlOTIyMmNmNGQyNGI1MTg4MWVjMDQ=&lang=0")
 }
 
 
@@ -202,5 +205,18 @@ function myFunction() {
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

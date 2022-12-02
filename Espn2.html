@@ -96,7 +96,7 @@ body {
   window.onload = function(){
       // your code here
 // Define the string
-var string = 'https://outisialtaniflo.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1';
+var string = 'https://taftwhoteri.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -125,6 +125,9 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
   </a>
 </div>
 <center><h2>ESPN2 en vivo </h2></center>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
 
   
@@ -152,12 +155,12 @@ document.getElementById("iframe").src = "//tucanaldeportivo.com/espn2hd.php"
 
 
 function mostrarMensaje3() {
-document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://outisialtaniflo.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1")
+document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://taftwhoteri.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1")
 }
 
 
 function mostrarMensaje4() {
-document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://outisialtaniflo.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1")
+document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://taftwhoteri.org/gg.html?uc2&get=Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwOTkvbWFuaWZlc3QubXBk&key=OTMzZGU4ZTkxNTUzNWFlMThjMjU1OGE1YTc2MzE4Yzk=&key2=ZTFmYzFlZWQ0ZWFlODNlMGRjMWIzNzA1Y2I2MmNhNjQ=&lang=1")
 }
 
 
@@ -180,5 +183,18 @@ function myFunction() {
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

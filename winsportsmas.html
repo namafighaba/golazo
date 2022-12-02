@@ -126,7 +126,7 @@ body {
    
 
 // Define the string
-var string = 'https://outisialtaniflo.org/gg.html?uc2&get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=';
+var string = 'https://taftwhoteri.org/gg.html?uc2&get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -156,6 +156,9 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
 </div>
 <center><h2>Win sports + en vivo </h2></center>
 <br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
 <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="" name="iframe"></iframe>
 
@@ -170,7 +173,7 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
   </center><br/>
 <script type="text/javascript">
   function mostrarMensaje1() {
-document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://outisialtaniflo.org/gg.html?uc2&get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=")
+document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://taftwhoteri.org/gg.html?uc2&get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=")
 }
 
 
@@ -199,5 +202,18 @@ function myFunction() {
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

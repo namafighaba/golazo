@@ -126,7 +126,7 @@ body {
    
 
 // Define the string
-var string = 'https://outisialtaniflo.org/gg.html?uc2&get=aHR0cHM6Ly8wMDY4LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGY2MmRiNjI3YmQ5M2I3MTgxNTRjYzg2MjllOTI5NzY=&key2=MDllMzc3MzlhMDkwMTQwNzM0OTA0NTEzZWUyZjRjZTM=';
+var string = 'https://taftwhoteri.org/gg.html?uc2&get=aHR0cHM6Ly8wMDY4LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NGY2MmRiNjI3YmQ5M2I3MTgxNTRjYzg2MjllOTI5NzY=&key2=MDllMzc3MzlhMDkwMTQwNzM0OTA0NTEzZWUyZjRjZTM=';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -155,6 +155,9 @@ var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
 <center><h2> </h2></center>
 
 <br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
       <iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="" scrolling="no" title="Reproductor 1" alt="Reproducir"></iframe></div>
 <br>
@@ -176,5 +179,18 @@ function myFunction() {
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

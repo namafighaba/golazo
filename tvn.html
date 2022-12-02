@@ -154,13 +154,30 @@ body {
 </div>
 <br>
 <center><h2>TVN </h2></center>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
 
     
-        <iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://outisialtaniflo.org/gg.html?uc2&get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyMjEvbWFuaWZlc3QubXBk&key=ZTFkZTU4MGZjNDMzNTlkZTlhYzg2YTAxOTE3ODg2YTY=&key2=MjlkNDIzNTUxYTM5NDkxOWZlNTExN2RhZDc2ZWM0YjI=" crolling="no" frameBorder="0" title="Reproductor 1" alt="Reproducir" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://taftwhoteri.org/gg.html?uc2&get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyMjEvbWFuaWZlc3QubXBk&key=ZTFkZTU4MGZjNDMzNTlkZTlhYzg2YTAxOTE3ODg2YTY=&key2=MjlkNDIzNTUxYTM5NDkxOWZlNTExN2RhZDc2ZWM0YjI=" crolling="no" frameBorder="0" title="Reproductor 1" alt="Reproducir" allowfullscreen></iframe>
 </div>
 <br>
 
    
-    </body>
-    </html>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+  
+
+</body></html>
