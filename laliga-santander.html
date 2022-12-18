@@ -8,6 +8,7 @@
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -112,16 +113,19 @@ body {
       </a>
     </div>
     <br>
-    <div class="video-container">
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container">Loading the player...
 
 
-<iframe style="background-color:black" allowfullscreen="" frameborder="0" height="300" id="MiIframe" marginheight="0" marginwidth="0" replaced="true"  scrolling="no" src=" //stream.crichd.vip/update/laligauk.php" width="100%"></iframe>
+<iframe style="background-color:black" allowfullscreen="" frameborder="0" height="300" id="MiIframe" marginheight="0" marginwidth="0" replaced="true"  scrolling="no" src="https://www.tutele.nl/online.php?a=153" width="100%"></iframe>
      </div>
 <br>
-<center><input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" />
+<!--<center><input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" />
 <input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" /> </center>
 
-<!--<input class="button" onclick="location.href='http://ibrasite.epizy.com/btsports1_embed.html';" type="button" value="OP-HD" /> -->
+<input class="button" onclick="location.href='http://ibrasite.epizy.com/btsports1_embed.html';" type="button" value="OP-HD" /> -->
 
 
     <script type="text/javascript">
@@ -147,5 +151,18 @@ document.getElementById("MiIframe").src = "https://www.tutele.nl/online.php?a=15
       }
     }
     </script>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
