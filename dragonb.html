@@ -119,7 +119,26 @@ body {
     width: 115px;
   }
 </style>
+<script>
+  window.onload = function(){
+      // your code here
+// Define the string
+var url = window.parent.location.href;
+   // const url1 = parent.document.location.href;
+let domain = (new URL(url));
+//let domain1 = (new URL(url1));
+domain = domain.hostname;
 
+var source = "https://player.twitch.tv/?channel=dragonballenvivo_1&parent="+domain;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source );
+
+
+};
+
+</script>
 </head>
 
 <body>
@@ -140,7 +159,7 @@ body {
 <br>
 <br>
     <div class="video-container">Loading the player...
-      <iframe width="100%" height="100%" src="https://player.twitch.tv/?channel=dragonballsupertv&parent=namafighaba.github.io" frameborder="0" allow="autoplay" allowfullscreen=""></iframe></div>
+      <iframe width="100%" height="100%" src="" frameborder="0" allow="autoplay" allowfullscreen=""></iframe></div>
 <br>
 
 
