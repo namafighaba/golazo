@@ -1,0 +1,48 @@
+<html>
+    <head> 
+
+  <style>
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+<script type="text/javascript" async="" src="https://www.visariomedia.com/wordcloud2.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" async="" src="https://d13k7prax1yi04.cloudfront.net/jquery.json2html.min.js" crossorigin="anonymous"></script>
+
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+window.disableP2pEngineIOSAutoInit = true;
+var p2pConfig = {live: true, announceLocation: 'us', p2pEnabled: true, useHttpRange: true , logLevel: 'error' }
+
+
+      var playerElement = document.getElementById("vid");
+       var player = new Clappr.Player(
+        {
+          source: "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5df975e2b27cf5000921c102/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=740&deviceId=5df975e2b27cf5000921c102&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          width: '100%',
+          height: '100%',
+          autoPlay: true,
+          mute:true,
+          mediacontrol: {buttons: "#FF0000" , seekbar: '#000000'},
+           mimeType: "application/x-mpegURL",
+       
+            playback: {
+                hlsjsConfig: {maxBufferSize: 0, maxBufferLength: 8,liveSyncDurationCount:10,
+                    p2pConfig: {logLevel: 'error',live: true,announceLocation: 'us',
+					 
+				    	p2pEnabled: true,useHttpRange: true,waitForPeer: true,
+                     //waitForPeerTimeout: 4.5,
+                    }}}});
+                player.attachTo(playerElement);
+                
+</script>
+
+
+</body></html>

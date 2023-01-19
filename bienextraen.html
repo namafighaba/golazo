@@ -1,9 +1,8 @@
 
+
 <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>CARACOL</title>
-    
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
@@ -98,6 +97,14 @@
                 height: auto;
             }
     
+            .textinput {
+                float: left;
+                width: 100%;
+                min-height: 30px;
+                outline: none;
+                resize: none;
+                border: 1px solid grey;
+            }
             .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
@@ -110,52 +117,32 @@
     width: 115px;
   }
     </style>
-        <script>
-
-          window.onload = function(){
-              // your code here
-           
-        
-        // Define the string
-        var string = 'https://bawnhasioming.digital/gg.html?uc2&get=Ly8xMTg1LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=ZmFkOWVhZjdhOTgwMzAwNjg2YWY3ODA5YzAzNzdhMDA=&key2=MGQyNzBkNGMxZWYyYTMxOWFlYWYyZjQyNGU5YjE0NDI=&lang=1';
-        
-        // Encode the String
-        var encodedString = btoa(string);
-        console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
-        var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
-        
-          var newFrameName = "hello";
-          const iframe = document.getElementById("iframe");
-          $('iframe').attr('src',source ).reload;
-        
-        
-        };
-        
-        </script>
+    
     </head>
     
     <body>
      
       <div class="contenedor">
         <div class="topnav" id="myTopnav">
-     <a href="index.html" class="active">Inicio</a>
-   <a href="canales.html"> Deportes </a>
-    <a href="note.html"> Canales </a>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="canales.html"> Deportes </a>
+             <a href="note.html"> Canales </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <center><h2>RCN en vivo </h2></center>
-    <!-- https://cdn.chatytvgratis.net/rcntabs.php -->
+    <br>
+
+    
         <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
-    <div class="video-container">Loading the player...
-  <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src=""></iframe>
-  </div>
+    <div class="video-container"> Loading the player...
+        
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="bienextraen_embed.html" width="100%" height="100%" frameborder="0" ></iframe>
+     </div>
     <br>
-    
-    <center>-</center>
+
     </div>
     <script>
     function myFunction() {
