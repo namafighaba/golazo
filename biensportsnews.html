@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>TNT SPORTS</title>
-    
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
@@ -106,7 +106,7 @@
                 resize: none;
                 border: 1px solid grey;
             }
-              .button {
+            .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -125,48 +125,26 @@
      
       <div class="contenedor">
         <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Inicio</a>
+     <a href="index.html" class="active">Inicio</a>
    <a href="canales.html"> Deportes </a>
     <a href="note.html"> Canales </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <br>
-    <center><h2>BienSports Fr 2 en direct </h2></center>
+    <center><h2>BienSports news </h2></center>
     
         <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
-    <div class="video-container">Loading the player...
-
-     <iframe  id="MiIframe"  allow="autoplay *; encrypted-media *;" class="myfr " frameborder="0" marginheight="0" src="bien2_embed.html" marginwidth="0" name="myframe" allowfullscreen=""></iframe>
-     
-     
+    <div class="video-container">  Loading the player...
+<iframe  src="https://www.mbc4you.com/zremb472.php?vid=31&aflam_s=1&aflam_w=5675&aflam_h=556755&aflam_k=" name="Player" width="764" height="445" frameborder="0" id="iframe" scrolling="No" allowfullscreen="allowfullscreen"></iframe>
      </div>
     <br>
-        <center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
-<input class="button" onclick="mostrarMensaje2()" type="button" value="OP-02" /> 
-</center>
 
+    
 
-
-
-<script type="text/javascript">
-  function mostrarMensaje1() {
-document.getElementById("MiIframe").src = "bien2_embed.html"
-}
-function mostrarMensaje2() {
-document.getElementById("MiIframe").src = "https://www.tutele.nl/online.php?a=3109"
-
-}
-
-
-
-
-
-</script>
-
+   
     </div>
     <script>
     function myFunction() {
@@ -178,6 +156,8 @@ document.getElementById("MiIframe").src = "https://www.tutele.nl/online.php?a=31
       }
     }
     </script>
+
+    
     <footer>
     
     

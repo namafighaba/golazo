@@ -21,7 +21,7 @@ body{
 <div id="vid"></div>
 <script>
  player = new Clappr.Player({
- source: "http://darkteam.vip:25461/live/FREXCHWEI3020/23UHDJDKNWJE9/125.m3u8",
+ source: "https://h7lya1.2embed.sbs/cdn/Jih7RNQzpjI8/tracks-v1a1/mono.m3u8?token=6dc0ad10b55ab2187393b482698cc0015f74376c-f5b3ad18ba23638d9ff22c8bc019c2d1--",
  mimeType: "application/x-mpegURL",
  autoPlay: true, 
  height: "100%",
@@ -29,5 +29,18 @@ body{
  plugins: {"core": [LevelSelector]}, 
  parentId: "#vid"});
 </script>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
