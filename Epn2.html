@@ -1,86 +1,111 @@
 
+
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>ESPN 2 HD</title>
-
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="expires" content="-1" />
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">    
-<style>
-body {
-  margin: 0;
-   background: #ececec;
-  font-family: 'arial', sans serif;
-  background-color: #333;
-}
-.contenedor {
- background-color: #333;
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px 10px;
-  text-align: justify;
-}
-
-.contenedor img {
-  width: 100%;
-}
-
-@media (max-width:600px)  { 
-  .contenedor {
-    width: 90%;
-  }
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 15px;
-    height: 0;
-     overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 12px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #68C420;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.button {
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <style>
+    body {
+      margin: 0;
+       background: #ececec;
+      font-family: 'arial', sans serif;
+    }
+    .contenedor {
+      background: #fafafa;
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px 10px;
+      text-align: justify;
+    }
+    
+    .contenedor img {
+      width: 100%;
+    }
+    
+    @media (max-width:600px)  { 
+      .contenedor {
+        width: 90%;
+      }
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 15px;
+        height: 0;
+         overflow: hidden;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #68C420;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    .codembed {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+            .commenter {
+                float: left;
+            }
+            .commenter img {
+                width: 35px;
+                height: 35px;
+            }
+            .comment-text-area {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+    
+            .textinput {
+                float: left;
+                width: 100%;
+                min-height: 30px;
+                outline: none;
+                resize: none;
+                border: 1px solid grey;
+            }
+            .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -91,65 +116,64 @@ body {
     font-weight: bold;
     width: 115px;
   }
-</style>
+    </style>
+    
+    </head>
+    
+    <body>
+     
+      <div class="contenedor">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="canales.html"> Deportes </a>
+             <a href="note.html"> Canales </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <br>
 
-</head>
-
-<body>
- 
-  <div class="contenedor">
-    <div class="topnav" id="myTopnav">
- <a href="index.html" class="active">Inicio</a>
-   <a href="canales.html"> Deportes </a>
-    <a href="note.html"> Canales </a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-<h2>ESPN2 en vivo por Internet</h2>
-    <div class="video-container">
- <iframe allowfullscreen="true" id="MiIframe" scrolling="no" src="//tucanaldeportivo.com/espn2hd.php" width="100%" height="100%" frameborder="0"></iframe>
- </div>
+    
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
-<center><input class="button" onclick="mostrarMensaje1()" type="button" value="Opcion1" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="Opcion2" /> 
-  </center><br/>
-<script type="text/javascript">
-  function mostrarMensaje1() {
-document.getElementById("MiIframe").src = "https://1rowsports.com/player/1/115"
-}
-function mostrarMensaje2() {
-document.getElementById("MiIframe").src = "//tucanaldeportivo.com/espn2hd.php"
-}
-</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+<br>
+    <div class="video-container">Loading the player...
+        
+      <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="m3u8player.html?url=aHR0cHM6Ly91c2hlci50dHZudy5uZXQvYXBpL3ZpZGVvL3YxL3VzLXdlc3QtMi4xOTYyMzM3NzU1MTguY2hhbm5lbC5NaFZJWDhMU0lQY3IubTN1OA==" name="iframe"></iframe>
+    </div>
+    <br>
+
+    
+    <center>-</center>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <footer>
+    
+    
+    
+    </footer>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
   } else {
-    x.className = "topnav";
+    document.exitFullscreen();
   }
-}
-</script>
-<footer>
- <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4341979,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4341979&101" alt="javascript contador" border="0"></a></noscript>
-<!-- Histats.com  END  -->
+}</script>
 
-<!--CHAT-->
-<!--CHAT-->
+  
 
-
-</footer>
-</body>
-</html>
+</body></html>
