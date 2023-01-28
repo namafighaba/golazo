@@ -6,6 +6,7 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -133,9 +134,12 @@
     <br>
 
     
-        <div class="video-container">
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container"> Loading the player...
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="playerm3u8.html?get=https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2022/10/27/Sivasspor_vs_CFR_Cluj_20221027_1666890916018/ctr-all-complete.m3u8&img=https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/8F2D7DC94F2F273D337347C38DA5C147E36513342C097D58F11D6656A699D65D/scale?width=1920&aspectRatio=1.78&format=jpeg&key=0732b5da49b0434389edac323f83ef43&key2=41f00b5b7c920f74c136844b90916995" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="playerm3u8.html?get=https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2023/01/28/Vuelta_a_San_Juan_Stage_6_20230128_1674934238034/ctr-all-complete.m3u8&img=https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/506DB4CC03873E01C9F03A68379C1B2185613A48FCB629F23B045A35970B270C/scale?width=1920&aspectRatio=1.78&format=jpeg&key=8c8640f36d5c4b63bad68a2be9fe76ae&key2=a04db21d6e821b1fcfda220e25ab4e6c" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
 
@@ -155,5 +159,19 @@
     
     
     </footer>
-    </body>
-    </html>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+  
+
+</body></html>
