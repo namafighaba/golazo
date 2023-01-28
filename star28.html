@@ -6,6 +6,7 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -133,9 +134,12 @@
     <br>
 
     
-        <div class="video-container">
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container"> Loading the player...
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="playerm3u8.html?get=https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2022/10/27/SK_Slovan_Bratislava_vs_P_20221027_1666890954023/ctr-all-complete.m3u8&img=https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/10715E319B5C49E37CB43CC4F2AFF2A4A3546081C3100736308B5760F8AE8EB4/scale?width=1920&aspectRatio=1.78&format=jpeg&key=9e3dbc8611474fa58dc78603c8313102&key2=ba27a19629abe12372b5ecac955a5a60" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="playerm3u8.html?get=https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2023/01/28/Artur_Beterbiev_vs_Anthon_20230128_1674927048024/ctr-all-complete.m3u8&img=https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/1FD38E30A98B3E32DE47EB9583AE5127F5B9087C3EC057BE24F04365B7B10418/scale?width=1920&aspectRatio=1.78&format=jpeg&key=8c25483067d74e888db4a65a24e4e5c4&key2=e52cac23f5e1fbcc160673e17963886f" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
 
@@ -155,5 +159,19 @@
     
     
     </footer>
-    </body>
-    </html>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+  
+
+</body></html>
