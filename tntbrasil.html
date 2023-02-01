@@ -139,10 +139,26 @@
 <br>
     <div class="video-container"> 
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="mpdplayer.html?get=https://ctr-01277-claro-br.claro-tv-live.qwilted-cds.cqloud.com/Content/Channel/SPOTNTHD/dsc3/manifest.mpd" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="iframe"   scrolling="no" src="m3u8player.html?url=aHR0cHM6Ly9nbHhsbW4wMjZjLnNpbmd1bGFyY2RuLm5ldC5ici9wbGF5b3V0XzAyL3BsYXlsaXN0Lm0zdTg=" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
-
+    <center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
+      <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-02" />
+         
+      </center><br/>
+    
+    <script type="text/javascript">
+      function mostrarMensaje1() {
+    document.getElementById("iframe").src = "m3u8player.html?url=aHR0cHM6Ly9nbHhsbW4wMjZjLnNpbmd1bGFyY2RuLm5ldC5ici9wbGF5b3V0XzAzL3BsYXlsaXN0Lm0zdTg="
+    
+    
+    }
+    
+    
+    function mostrarMensaje3() {
+    document.getElementById("iframe").src = "m3u8player.html?url=aHR0cHM6Ly9nbHhsbW4wMjZjLnNpbmd1bGFyY2RuLm5ldC5ici9wbGF5b3V0XzAyL3BsYXlsaXN0Lm0zdTg="
+    }
+    </script>
     </div>
     <script>
     function myFunction() {
