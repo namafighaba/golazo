@@ -119,7 +119,28 @@ body {
 </style>
 
 </head>
+<script>
 
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://nderverm.cam/gg50.html?uc2&get=Ly9saXZlNS1vdHQuaXp6aWdvLnR2L291dC91L2Rhc2gvSEJPLVBPUC1IRC9kZWZhdWx0Lm1wZA==&key=YmNmMzZmNDEyZmEzZDczNWNlYTA0Zjc0NDNmYmY3N2M=&key2=NmZmMjlmYjJkNmI3ZDgyNWViMDYwMDQ2NTBhMGE0ZWE=';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 <body>
  
   <div class="contenedor">
@@ -136,7 +157,7 @@ body {
 <br>
 <br>
     <div class="video-container">Loading the player...
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="m3u8player.html?url=aHR0cHM6Ly9pcy10dWN1bWFuLmNkbi5yY3MubmV0LmFyL21ucC9oYm9wb3BfaGxzL3BsYXlsaXN0Lm0zdTg%3D&sid=20015" __idm_id__="14934017"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="" __idm_id__="14934017"></iframe>
     </div>
 <br>
 <br/>
