@@ -1,0 +1,43 @@
+<html>
+    <head> 
+
+  <style>
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+
+
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+ player = new Clappr.Player({
+ source: "https://bdcz0sjph3j81z.sharecast.ws/hls/2f3d67eb5ee9f7b6-35896ccf91c02e210d4419b111f012173e2eb113e971c41a1c8154e274bf03fe/live.m3u8",
+ mimeType: "application/x-mpegURL",
+ autoPlay: true, 
+ height: "100%",
+ width: "100%",
+ plugins: {"core": [LevelSelector]}, 
+ parentId: "#vid"});
+</script>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>

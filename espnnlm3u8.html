@@ -1,0 +1,122 @@
+
+<script>
+        fetch('https://freegeoip.app/json/')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          if(data.country_code == 'IN') {
+            window.location.replace("https://google.com");
+          }
+        })
+      </script>
+      
+      
+        
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title></title>
+          <!-- Clappr Builds -->
+          <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.7/dist/clappr.min.js"></script>
+          <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+          <!-- P2PEngine -->
+          <script src="https://cdn.jsdelivr.net/npm/swarmcloud-hls@latest/dist/p2p-engine.min.js"></script>
+          <!-- P2P Clappr Plugin -->
+          <script src="https://cdn.jsdelivr.net/npm/swarmcloud-hls@latest/dist/clappr-p2p-plugin.min.js"></script>
+      </head>
+      <style type="text/css">
+           body {
+        background-color: #000;
+        margin: 0px;
+        padding: 0px;
+    }
+      //#player{border:1px solid #000;background-color:#000;color:#fff;min-height:300px;margin:25px auto;width:100%;}
+      #play{width:100%;cursor:pointer; }
+      //.tv-loading{margin-top:180px;text-align:center;}
+      #videoplayer{position:absolute;top:0;bottom:0;left:0;right:0;}
+      div.media-control-center-panel{display:none !important;}
+      </style>
+      <style>
+         .unmute {;
+          z-index: 2;
+          color: #fff;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background:none;
+      
+      
+          width: 200px;
+          border: 2px solid #fff;
+          padding: 4px 0;
+          border-radius: 2px;
+          cursor: pointer;
+          opacity: 0.8;}
+        //  color: white;
+        #btn-unmute:hover {
+          opacity: 1;
+      }
+      
+      </style>
+      
+      <body>
+      <div id="player"></div>
+    
+      <p id="info"></p>
+      <script>
+          var p2pConfig = {
+              // logLevel: 'debug',
+              live: true,        // set to false in VOD mode
+              getStats: function (totalP2PDownloaded, totalP2PUploaded, totalHTTPDownloaded) {
+                  var total = totalHTTPDownloaded + totalP2PDownloaded;
+                 // document.querySelector('#info').innerText = `p2p ratio: ${Math.round(totalP2PDownloaded/total*100)}%, saved traffic: ${totalP2PDownloaded}KB, uploaded: ${totalP2PUploaded}KB`;
+              },
+              // announceLocation: 'hk',        // if using Hongkong tracker
+              // announceLocation: 'us',        // if using USA tracker
+              // Other p2pConfig options provided by CDNBye
+          }
+          if (!P2pEngineHls.isMSESupported()) {
+              // use ServiceWorker based p2p engine if hls.js is not supported, need additional file sw.js
+              new P2pEngineHls.ServiceWorkerEngine(p2pConfig)
+          }
+          var player = new Clappr.Player(
+              {
+                  source: "https://lshstream.xyz/hls/uRkz8aKM/index.m3u8?st=Fx6TcymZpqONy3Ab1ajGsA&e=1675886891",
+                  parentId: "#player",
+      width: '100%',
+      height: '100%',
+      autoPlay: true,
+      mute:true,
+      mediacontrol: {buttons: "#FF0000" , seekbar: '#000000'}, 
+                  plugins: [LevelSelector, SwarmCloudClapprPlugin],
+                  playback: {
+                      hlsjsConfig: {
+                          maxBufferSize: 0,       // Highly recommended setting in live mode
+                          maxBufferLength: 10,     // Highly recommended setting in live mode
+                          liveSyncDurationCount: 10,   // Highly recommended setting in live mode
+                          // Other hlsjsConfig options provided by hls.js
+                          p2pConfig
+                      }
+                  }
+              });
+      
+          player.core.getCurrentPlayback()._hls.on('hlsError', (e) => {
+      
+          })
+      </script>
+        <script>
+      function WSUnmute() {
+              document.getElementById("UnMutePlayer").style.display="none";
+              player.setVolume(100);
+          }
+      </script>
+      
+      </div>
+      <div id="UnMutePlayer" style="position: absolute; right: 12px; top: 7px; width: 250px; height: 45px; visibility: visible;">
+      <button  class="UnMute" onclick="WSUnmute()">CLICK TO UNMUTE PLAYER</button>
+      </div>
+      </body>
+  
+      </html>
