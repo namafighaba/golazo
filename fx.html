@@ -118,6 +118,29 @@ body {
     width: 115px;
   }
 </style>
+<script>
+
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = '//idaysioush.digital/gg2.html?get=aHR0cHM6Ly8xMTI5LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=N2Q4MGNjZGI5NzIwMzJhYzg2ZjhkZjZjMmU5N2I2MWU=&key2=MmY4OTY5ZWFlZTI2NDQ4OWQ2NDU0MmI5NGEzZTk4MDc=';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
+
 
 </head>
 
@@ -136,7 +159,7 @@ body {
 <br>
 <br>
     <div class="video-container">Loading the player...
-       <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="fx_embed.html" name="iframe"></iframe></div>
+       <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="" name="iframe"></iframe></div>
 <br>
 
 <center>&nbsp</center>

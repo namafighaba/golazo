@@ -119,6 +119,28 @@ body {
 </style>
 
 </head>
+<script>
+
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = '//neyernot.cam/gg50.html?get=aHR0cHM6Ly9kdHZvdHQtY2JjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyMTIvbWFuaWZlc3QubXBk&key=NDllYjJjMThiZWQ2NTJjYzkzYzg3NWNlYmI5YWY0MGU=&key2=ODQxODIwZDI2NjNiYWIyNmUwMWE0YmRjYmY3MWU0NDM=';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 
 <body>
  
@@ -132,8 +154,11 @@ body {
 <center><h2>TBS en VIVO </h2></center>
 
 <br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="tbs_embed.html" __idm_id__="12910593"></iframe>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src="" __idm_id__="12910593"></iframe>
     </div>
 <br>
 <br/>
@@ -164,5 +189,18 @@ function myFunction() {
 
 
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
