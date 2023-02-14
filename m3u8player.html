@@ -32,12 +32,13 @@
 				"title": "REPRODUCTOR", "description": "", "image": "",
 				"sources": [{
 					"default": true,
+          "mute": false,
 					"label": "1",
 					"type": "hls",
 					"file": atob(getData("url"))
 				}]
 			}],
-			width: "100%", height: "100%",mute: false, 
+			width: "100%", height: "100%", 
 	autostart: true, aspectratio: "16:9", cast: {}, 
 		});
 		jwplayer("player").on("play", function(e){jwplayer("player").setCurrentAudioTrack(getData("lang"));jwplayer("player").setCurrentQuality(3)});
