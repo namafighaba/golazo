@@ -119,7 +119,28 @@ body {
     width: 115px;
   }
 </style>
+<script>
 
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://www.torrentoficial.com/web/dash.php?url=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9Gb3hTcG9ydHMySEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9Gb3hTcG9ydHMySEQubXBk&k1=Yzk4ZGRmZmM0NzBmZTQ0OWFlMWE4ZDY0OTIxMTY5NzY=&k2=NTA4NmQzNzBlODQwMDEwMjMyY2Y0NTMyYjE2ZTE5N2Y=&aut=true';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 </head>
 
 <body>
@@ -142,24 +163,24 @@ body {
     <div class="video-container">Loading the player...
     
 
-      <iframe width="100%" height="100%" frameborder="0" allowtransparency="true"  id="iframe" scrolling="no" target="iframe" src="//bahiadeportes.com/canales/foxsports2arg-1.php" allow="encrypted-media *;" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" player-mode="video"></iframe>
+        <iframe  id="iframe"  width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay *; encrypted-media *;" name="iframe" src=""></iframe>
  
  </div>
 <br>
 <center>
-<input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-02" /> 
-
+<input class="button" onclick="mostrarMensaje1()" type="button" value="OP-HD" />
+  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-HD" /> 
+  <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-SD" /> 
   
   </center><br/>
 <script type="text/javascript">
   function mostrarMensaje1() {
-document.getElementById("iframe").src = "//bahiadeportes.com/canales/foxsports2arg-1.php"
+document.getElementById("iframe").src = "https://megatelevisionhd.com/embed/repro/?r="+btoa("https://www.torrentoficial.com/web/dash.php?url=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9Gb3hTcG9ydHMySEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9Gb3hTcG9ydHMySEQubXBk&k1=Yzk4ZGRmZmM0NzBmZTQ0OWFlMWE4ZDY0OTIxMTY5NzY=&k2=NTA4NmQzNzBlODQwMDEwMjMyY2Y0NTMyYjE2ZTE5N2Y=&aut=true")
 }
 
 
 function mostrarMensaje2() {
-document.getElementById("iframe").src = "//bahiadeportes.com/canales/foxsports2arg-2.php"
+document.getElementById("iframe").src = "//tucanaldeportivo.com/foxsports2.php"
 }
 
 function mostrarMensaje3() {
