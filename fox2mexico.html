@@ -7,6 +7,7 @@
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -118,7 +119,33 @@ body {
   }
 
 </style>
+<script>
 
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://www.torrentoficial.com/web/dash.php?url=aHR0cHM6Ly9kdHZvdHQtY2JjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExMjAvbWFuaWZlc3QubXBk&k1=NGI1NjllOWY4MjY2NTQyZmEzZjQwMmMzMDU3Y2I5OGM=&k2=YzY4ZDY5ZWRhODIwMDNkMDk1ZDQ2NmEyNDkyYjdkMGU=';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+
+
+
+
+var source = "https://barhomusdza.github.io/uji/repro.html?r="+encodedString;
+
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 </head>
 
 <body >
@@ -132,8 +159,11 @@ body {
 </div>
 <br>
 <center><h2> FOX 2 MEXICO </h2></center>
-    <div class="video-container">
-<iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="fox2mex1_embed.html" scrolling="no" title="Reproductor 1" alt="Reproducir" __idm_id__="1024001"></iframe></div>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container">Loading the player...
+<iframe class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="" scrolling="no" title="Reproductor 1" alt="Reproducir" __idm_id__="1024001"></iframe></div>
 <br>
 
 <!--<center><input class="button" onclick="mostrarMensaje1()" type="button" value="Opcion1" />
@@ -172,5 +202,18 @@ function myFunction() {
 <footer>
  
 </footer>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
