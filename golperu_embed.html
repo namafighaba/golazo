@@ -1,47 +1,46 @@
 
-
 <style type="text/css">
-body {
-   margin: 0;
-   padding: 0;
-}
-</style>
-<head>
-</head>
-<script src="//ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
-<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-</script>
-<meta name="referrer" content="no-referrer">
-<meta name="origin" content="no-origin">
-<div id="player"></div>
-<script>
-
-    var playerInstance = jwplayer("player");
-
-    playerInstance.setup({
-
-        playlist: [{
-        title: "EN VIVO",
-        image: "",
-        description: "",
-            "sources": [
-                {
-                    "default": false,
-                    "type": "dash",
-                    "file": 'https://b41838.2.cdn.telefonica.com/41838/_-_fh4QHfSmRGgLKLJfgtHvJ_0VVBsvwfSWMxjHVczVtvjfMfokucOCuJKtpRFm-2gF_-_/live/disk1/GolPeruHD/DASH/GolPeruHD.mpd?tcdn-bitrate-filter=LIVEHD',
-                    "drm": {
-                        "clearkey": { "keyId": "a563b28779fb41f4855d6f9f7042597e", "key": "b059f82368f898c10b080500f0818941" }
-                    },
-                    "label": "0"
-                }
-            ]
-        }],
-        width: "100%",
-        height: "100%",
-        aspectratio: "16:9",
-        autostart: false,
-        cast: {},
-        sharing: {}
-    });
-
-</script>
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    </style>
+    <head>
+    </head>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
+    <script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    </script>
+    <meta name="referrer" content="no-referrer">
+    <meta name="origin" content="no-origin">
+    <div id="player"></div>
+    <script>
+    
+        var playerInstance = jwplayer("player");
+    
+        playerInstance.setup({
+    
+            playlist: [{
+            title: "EN VIVO",
+            image: "",
+            description: "",
+                "sources": [
+                    {
+                        "default": false,
+                        "type": "dash",
+                        "file": 'https://b41838.2.cdn.telefonica.com/41838/_-_eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlkyUnVPakUyTnpZMU16WXlNRE09In0.eyJpYXQiOjE2NzY3NTMyMjcsInVpZCI6Inluc1d1REJhbkhkRFZkTnJpQWxqbGlSSklSNHZhVnc5QlZqT0twTzRVdEZDWUJ6VHpXRnpTU1dqOFNxNlpvQmYifQ.NQ1lwFlWHuG8SHtrReM8QtzLTpEazrw_YaCfNtx17MrvdXJfdC0AMzegHlScoSBY8JhZeNAzxvDK6e6J0_T1VA_-_/live/disk1/GolPeruHD/DASH/GolPeruHD.mpd?tcdn-bitrate-filter=LIVEHD',
+                        "drm": {
+                            "clearkey": { "keyId": "d3cf4f05ad39479595321181bcab1f0e", "key": "f7b71d84cc4e45d21c4ab3bc41e55967" }
+                        },
+                        "label": "0"
+                    }
+                ]
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+            cast: {},
+            sharing: {}
+        });
+    
+    </script>
