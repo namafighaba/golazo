@@ -1,111 +1,86 @@
 
-
 <html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="expires" content="-1" />
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CARACOL</title>
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <style>
-    body {
-      margin: 0;
-       background: #ececec;
-      font-family: 'arial', sans serif;
-    }
-    .contenedor {
-      background: #fafafa;
-      width: 50%;
-      margin: 0 auto;
-      padding: 10px 10px;
-      text-align: justify;
-    }
-    
-    .contenedor img {
-      width: 100%;
-    }
-    
-    @media (max-width:600px)  { 
-      .contenedor {
-        width: 90%;
-      }
-    }
-    
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 15px;
-        height: 0;
-         overflow: hidden;
-    }
-    
-    .video-container iframe {
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    .topnav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 12px;
-    }
-    
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .topnav a.active {
-      background-color: #68C420;
-      color: white;
-    }
-    
-    .topnav .icon {
-      display: none;
-    }
-    
-    .codembed {
-                float: left;
-                width: 100%;
-                height: auto;
-            }
-            .commenter {
-                float: left;
-            }
-            .commenter img {
-                width: 35px;
-                height: 35px;
-            }
-            .comment-text-area {
-                float: left;
-                width: 100%;
-                height: auto;
-            }
-    
-            .textinput {
-                float: left;
-                width: 100%;
-                min-height: 30px;
-                outline: none;
-                resize: none;
-                border: 1px solid grey;
-            }
-            .button {
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+body {
+  margin: 0;
+   background: #ececec;
+  font-family: 'arial', sans serif;
+}
+.contenedor {
+  background: #fafafa;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-align: justify;
+}
+
+.contenedor img {
+  width: 100%;
+}
+
+@media (max-width:600px)  { 
+  .contenedor {
+    width: 90%;
+  }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 15px;
+    height: 0;
+     overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #68C420;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -116,37 +91,57 @@
     font-weight: bold;
     width: 115px;
   }
-    </style>
-    
-    </head>
-    
-    <body>
-     
-      <div class="contenedor">
+
+</style>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="cache-control" content="no-store">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="timestamp">
+<title>Live</title>
+
+</head>
+<body>
+    <div class="contenedor">
         <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Inicio</a>
-            <a href="canales.html"> Deportes </a>
-             <a href="note.html"> Canales </a>
+     <a href="index.html" class="active">Inicio</a>
+   <a href="canales.html"> Deportes </a>
+    <a href="note.html"> Canales </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <br>
-
-    
-        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
     <div class="video-container">Loading the player...
-        
-      <iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="https://bahiadeportes.com/canales/laliga.php" name="iframe"></iframe>
-    </div>
-    <br>
 
-    
-    <center>-</center>
-    </div>
-    <script>
+
+<iframe style="background-color:black" allowfullscreen="" frameborder="0" height="300" id="MiIframe" marginheight="0" marginwidth="0" replaced="true"  scrolling="no" src="https://www.tutelehd.xyz/online.php?a=153" width="100%"></iframe>
+     </div>
+<br>
+<!--<center><input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" />
+<input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" /> </center>
+
+<input class="button" onclick="location.href='http://ibrasite.epizy.com/btsports1_embed.html';" type="button" value="OP-HD" /> -->
+
+
+    <script type="text/javascript">
+  function mostrarMensaje1() {
+document.getElementById("MiIframe").src = " //stream.crichd.vip/update/laligauk.php"
+}
+function mostrarMensaje2() {
+document.getElementById("MiIframe").src = "https://www.tutelehd.xyz/online.php?a=153"
+
+}
+
+
+</script>
+        
+        
+<script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -156,12 +151,7 @@
       }
     }
     </script>
-    <footer>
-    
-    
-    
-    </footer>
-
+</script>
 <script>function toggleFullscreen() {
   let elem = document.querySelector("iframe");
 
@@ -174,6 +164,5 @@
   }
 }</script>
 
-  
 
 </body></html>
