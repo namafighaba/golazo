@@ -1,55 +1,59 @@
 <html lang="es">
 <head>
+
 <meta name="robots" content="noindex" />
-<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
-<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
-<style> 
+<style type="text/css">
 
-.player-poster[data-poster] {
-  background-size: cover;
+body {
+   margin: 0;
+   padding: 0;
 }
-body{
-  margin:0;
-  padding:0;
-}
-
 </style>
 </head>
-<div id="player"></div>
-<script>
-var player = new Clappr.Player({
-        source: 'https://dce-fs-live-dazn-cdn.dazn.com/dashdrm/dazn-linear-018/stream.mpd',
-        mimeType: 'application/dash+xml',
-        height: '100%',
-        width: '100%',
-        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
-        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
-        chromecast: {
-            appId: '9DFB77C0',
-            contentType: 'video/mp4',
-        },
-        shakaConfiguration: {
-            drm: {
-            clearKeys: {
-                '4e10006d817658f49834f90f2581f7c5': '593577e3f5dfcae421a283eecfd4e075',
-                    '9b0d9d4ed3b552c4b2986c51df75f329': 'd8d00c5e6c884b3a1660b1446b7e75b5',
-                    'c4b7ec59fa5255c5a76b78b074bcb9ea': '5a3530d04decbebf93592855a7b7fafd',
-                    'cfb5e2b73bef4f3c878f25ab86a7451f': '0d6712bf2a84edcc93d001a9613f6fec',
-                    'd6229ed7c208587583d7b4ef894ad69b': '7825bf1a2e1039aa0dc5e45b5536618e'
-                }
-                
-            },
-            preferredAudioLanguage: 'pt-BR',
-        },
-        shakaOnBeforeLoad: function (shaka_player) {},
-        parentId: '#player'
-    });
+
+<script type="text/javascript">
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+	var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+	results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+
 </script>
+<script src='https://content.jwplatform.com/libraries/KB5zFt7A.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+<div id="player"></div>
+<script type="text/javascript">
+var playerInstance=jwplayer("player");
+
+playerInstance.setup({
+
+    playlist: [{
+    "title": "REPRODUCTOR | PAPPO",
+    "description": "EN VIVO",
+ 
+      "sources": [
+        {
+          "default": false,
+          "type": "dash",
+          "file": "https://dce-ak-livewwdazn.akamaized.net/dashdrm/dazn-linear-018/stream.mpd?p=web",
+          "drm": {
+            "clearkey": {"keyId":"82f8e2a17dac44c0a18f660479349c59", "key":"1b144f73e6fefe91cd05f850e2b589d0"}
+          },
+          "label": "0"
+        }
+      ]
+    }],
+    width: "100%",
+    height: "100%",
+    aspectratio: "16:9",
+    autostart: false,
+    cast: {},
+    sharing: {}
+});
+</script>
+
+</body></html>
