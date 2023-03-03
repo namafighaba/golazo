@@ -117,7 +117,28 @@
     width: 115px;
   }
     </style>
+    <script>
+
+      window.onload = function(){
+          // your code here
+       
     
+    // Define the string
+    var string = 'https://www.torrentoficial.com/web/dash.php?url=aHR0cHM6Ly8wMDcwLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&k1=MDhhNDI3NzQyNDA3M2ExNWJhZGFmZWY3MDFhNDJiOGI=&k2=MDMwNjAxZTYwNWMyODk2YTQ0MmM3M2Q1NzVhMzIzYTg=&lang=0';
+    
+    // Encode the String
+    var encodedString = btoa(string);
+    console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+    var source = "https://barhomusdza.github.io/uji/repro.html?r="+encodedString;
+    
+      var newFrameName = "hello";
+      const iframe = document.getElementById("iframe");
+      $('iframe').attr('src',source ).reload;
+    
+    
+    };
+    
+    </script>
     </head>
     
     <body>
@@ -139,7 +160,7 @@
 <br>
     <div class="video-container"> 
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="mpdplayer.html?get=https://qn-01277-rjoen-1-01-2.claro-tv-live.qwilted-cds.cqloud.com/Content/Channel/SPOSP3HD/dsc1/manifest.mpd" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
 
