@@ -107,25 +107,24 @@
     <center><h2>Foxdeportes en vivo </h2></center>
     
     <br>
-        <div class="video-container">
-<iframe class="embed-responsive-item" id="iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="foxdeportesclp_embed.html" scrolling="no" title="Reproductor 1" alt="Reproducir"></iframe>
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container">Loading the player...
+<iframe class="embed-responsive-item" id="iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="https://bahiadeportes.com/canales/foxdeportes.php" scrolling="no" title="Reproductor 1" alt="Reproducir"></iframe>
      </div>
     <br>
     
-<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-CL" />
 
-     
-  </center><br/>
 
 <script type="text/javascript">
   function mostrarMensaje1() {
-document.getElementById("iframe").src = "foxdeportesjw_embed.html"
+document.getElementById("iframe").src = "https://micanaldeportivo.com/playerespn4.php?get=Ly9saW5lYXIuc3R2YWNkbi5zcGVjdHJ1bS5jb20vTElWRS8xMTA2L2Rhc2gvY2VuYy9GWERFUEhEL21hbmlmZXN0Lm1wZA==&key=YzkyMzFkNWU3YTk5NDI5MzgyZTZhNWMyZTU4OGUxNDE=&key2=Y2EwOGFiNDA3YWI5MzkzYTgxNGQ3MjBmMWY0MWM2Y2Y=&aut=true"
 
 
 }
 function mostrarMensaje2() {
-document.getElementById("iframe").src = "foxdeportesclp_embed.html"
+document.getElementById("iframe").src = "https://micanaldeportivo.com/playerespn4.php?get=Ly9saW5lYXIuc3R2YWNkbi5zcGVjdHJ1bS5jb20vTElWRS8xMTA2L2Rhc2gvY2VuYy9GWERFUEhEL21hbmlmZXN0Lm1wZA==&key=YzkyMzFkNWU3YTk5NDI5MzgyZTZhNWMyZTU4OGUxNDE=&key2=Y2EwOGFiNDA3YWI5MzkzYTgxNGQ3MjBmMWY0MWM2Y2Y=&aut=true"
 }
 </script>
 
@@ -145,5 +144,19 @@ document.getElementById("iframe").src = "foxdeportesclp_embed.html"
     
     
     </footer>
-    </body>
-    </html>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+  
+
+</body></html>
