@@ -117,7 +117,28 @@
     width: 115px;
   }
     </style>
-    
+        <script>
+
+          window.onload = function(){
+              // your code here
+           
+        
+        // Define the string
+        var string = 'https://www.torrentoficial.com/web/dash.php?url=aHR0cHM6Ly9kdHZvdHQtamJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzAwMzUvbWFuaWZlc3QubXBk&k1=M2FkM2RjYTEwMzE4NTkzNGFjZmY3YTBlOTAwMGMxMTI=&k2=ZGU3Yzc5MzBhYTg1MDQ5ZjdjYjdiZWZkYmNkYzU0ZGQ=';
+        
+        // Encode the String
+        var encodedString = btoa(string);
+        console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+        var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+        
+          var newFrameName = "hello";
+          const iframe = document.getElementById("iframe");
+          $('iframe').attr('src',source ).reload;
+        
+        
+        };
+        
+        </script>
     </head>
     
     <body>
@@ -137,9 +158,9 @@
         <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
-    <div class="video-container"> Loading the player...
+    <div class="video-container">Loading the player...
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="playerm3u8.html?get=https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2023/03/14/AC_Milan_vs_Atltico_Madri_20230314_1678800333021/ctr-all-complete.m3u8&img=https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/2777EF84C2AB221A51A0A438C1CCE0D6A8F4571E7C56828429BA2A4056A70437/scale?width=1920&amp&aspectRatio=1.78&format=jpeg&key=be0e45cf05a34260adb628da17ea8e8a&key2=766d0ba5100186731c83a5e140a61763" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="iframe"   scrolling="no" src="" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
 
