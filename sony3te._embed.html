@@ -1,0 +1,43 @@
+<html>
+    <head> 
+
+  <style>
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+
+
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+ player = new Clappr.Player({
+ source: "https://lin-gd-001-cf.slivcdn.com/out/v1/0ee967e6ce5c4d10a3cf86078e91a674/master_8.m3u8?hdntl=exp=1678942893~acl=*~hmac=dbaaf33b1a34a8b8a7101c8fb62e96af3e80ca0f1b00f2ce1dadb31154bef3b7&originpath=/linear/hls/pa/event/ltsCG7TBSCSDmyq0rQtvSA/stream/7143301b-1e45-49a3-ac7e-a8d292ba01fa:SCL/variant/f1eb66c64517bc0a9e11da4cec80584f/bandwidth/1245156.m3u8",
+ mimeType: "application/x-mpegURL",
+ autoPlay: true, 
+ height: "100%",
+ width: "100%",
+ plugins: {"core": [LevelSelector]}, 
+ parentId: "#vid"});
+</script>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
