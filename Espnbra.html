@@ -117,7 +117,28 @@
     width: 115px;
   }
     </style>
-    
+            <script>
+
+              window.onload = function(){
+                  // your code here
+               
+            
+            // Define the string
+            var string = '//micanaldeportivo.com/playerespn4.php?get=aHR0cHM6Ly8wMDA3LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=OGJkYjZjYjJiYTg5M2Y4MzllNjM5ZDZkN2YxNjQzOGU=&key2=MDhlNWFhZTI0NzI0NDNlMWRhYjU0MTQ0NDViZWRjMzY=';
+            
+            // Encode the String
+            var encodedString = btoa(string);
+            console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+            var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+            
+              var newFrameName = "hello";
+              const iframe = document.getElementById("iframe");
+              $('iframe').attr('src',source ).reload;
+            
+            
+            };
+            
+            </script>
     </head>
     
     <body>
@@ -139,7 +160,7 @@
 <br>
     <div class="video-container"> 
         
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="mpdplayer.html?get=https://qn-01277-paemf-1-01-1.claro-tv-live.qwilted-cds.cqloud.com/Content/Channel/SPOESBHD/dsc1/manifest.mpd" width="100%" height="100%" frameborder="0" ></iframe>
+     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="" width="100%" height="100%" frameborder="0" ></iframe>
      </div>
     <br>
 
