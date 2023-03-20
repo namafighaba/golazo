@@ -1,125 +1,113 @@
 
 
 <html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ESPN4 HD</title>
-    
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="expires" content="-1" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>FOX SPORTS 3</title>
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634091835281348"
-     crossorigin="anonymous"></script>
 
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-27CY0CWDQC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+body {
+  margin: 0;
+   background: #ececec;
+  font-family: 'arial', sans serif;
+}
+.contenedor {
+  background: #fafafa;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-align: justify;
+}
 
-  gtag('config', 'G-27CY0CWDQC');
-</script>
-  
-    <style>
-    body {
-      margin: 0;
-       background: #ececec;
-      font-family: 'arial', sans serif;
-    }
-    .contenedor {
-      background: #fafafa;
-      width: 50%;
-      margin: 0 auto;
-      padding: 10px 10px;
-      text-align: justify;
-    }
-    
-    .contenedor img {
-      width: 100%;
-    }
-    
-    @media (max-width:600px)  { 
-      .contenedor {
-        width: 90%;
-      }
-    }
-    
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 15px;
-        height: 0;
-         overflow: hidden;
-    }
-    
-    .video-container iframe {
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    .topnav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 12px;
-    }
-    
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .topnav a.active {
-      background-color: #68C420;
-      color: white;
-    }
-    
-    .topnav .icon {
-      display: none;
-    }
-    
-    .codembed {
-                float: left;
-                width: 100%;
-                height: auto;
-            }
-            .commenter {
-                float: left;
-            }
-            .commenter img {
-                width: 35px;
-                height: 35px;
-            }
-            .comment-text-area {
-                float: left;
-                width: 100%;
-                height: auto;
-            }
-    
-            .textinput {
-                float: left;
-                width: 100%;
-                min-height: 30px;
-                outline: none;
-                resize: none;
-                border: 1px solid grey;
-            }
-            .button {
+.contenedor img {
+  width: 100%;
+}
+
+@media (max-width:600px)  { 
+  .contenedor {
+    width: 90%;
+  }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 15px;
+    height: 0;
+     overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #68C420;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.codembed {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        .commenter {
+            float: left;
+        }
+        .commenter img {
+            width: 35px;
+            height: 35px;
+        }
+        .comment-text-area {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .textinput {
+            float: left;
+            width: 100%;
+            min-height: 30px;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+        }
+        .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -130,71 +118,82 @@
     font-weight: bold;
     width: 115px;
   }
-    </style>
-    <script>
+</style>
+<script>
+  window.onload = function(){
+      // your code here
+// Define the string
+var string = 'https://elcanaldeportivo.com/cstream.html?id=1106';
 
-      window.onload = function(){
-          // your code here
-       
-    
-    // Define the string
-    var string = 'https://www.torrentoficial.com/web/dash.php?url=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzExMDYvREFTSC9tYW5pZmVzdC5tcGQ=&k1=MjQ0NGY3ZjE5YjI5MzUyZWI2ZDFjN2Y5ZDhmNzFkNTk=&k2=MDI3ZmM0ZjNiNjI3NTExMWMwYzhiNWFlODQ5MzNlYTg=&lang=0';
-    
-    // Encode the String
-    var encodedString = btoa(string);
-    console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
-    var source = "repro.html?r="+encodedString;
-    
-      var newFrameName = "hello";
-      const iframe = document.getElementById("iframe");
-      $('iframe').attr('src',source ).reload;
-    
-    
-    };
-    
-    </script>
-    </head>
-    
-    <body>
-     
-      <div class="contenedor">
-        <div class="topnav" id="myTopnav">
-     <a href="index.html" class="active">Inicio</a>
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
+</head>
+
+<body>
+ 
+  <div class="contenedor">
+    <div class="topnav" id="myTopnav">
+ <a href="index.html" class="active">Inicio</a>
    <a href="canales.html"> Deportes </a>
     <a href="note.html"> Canales </a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <center><h2>ESPN Colombia  </h2></center>
-    
-        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<center><h2>Espn COLOMBIA  </h2></center>
+
+<br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
     <div class="video-container">Loading the player...
-     
- <iframe id="data" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" allow="autoplay; encrypted-media;" name="iframe" src=""></iframe>  
-     </div>
-    <br>
-    
-    <center>-</center>
-    </div>
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
-    <footer>
-    
-    
-    
-    </footer>
 
+      <iframe  id="iframe" class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" src="" scrolling="no" title="Reproductor 1" alt="Reproducir"></iframe></div>
+
+
+<br>
+
+
+      
+      <script type="text/javascript">
+        function mostrarMensaje1() {
+      document.getElementById("iframe").src = "https://todos-cc7.pages.dev/repro.html?r=aHR0cHM6Ly9nZXJtYW55aXAud29yay9zdi1tdC5waHA/dXBkYXRlJmdldD1MeTlrZEhadmRIUXRZMkpqTG1GcllXMWhhWHBsWkM1dVpYUXZaR0Z6YUY5c2FYWmxYekV4TURBdmJXRnVhV1psYzNRdWJYQmsma2V5PU1EWmlNMkZrWm1KaE9UZzBOV00zWXpreU5EY3dOR1prT0dJNFpHTmtOalE9JmtleTI9WkdOallqSm1aakV3TkdSbU1HSmlZelUwWkdVd05tSXpZekkzT0RabU5XTT0mbGFuZz0w"
+      
+      
+      }
+      function mostrarMensaje2() {
+      document.getElementById("iframe").src = "//mondialooo.ga/espn2mex_embed.html"
+      }
+      
+
+      </script>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<footer>
+
+
+
+</script>
 <script>function toggleFullscreen() {
   let elem = document.querySelector("iframe");
 
@@ -207,6 +206,5 @@
   }
 }</script>
 
-  
 
 </body></html>
