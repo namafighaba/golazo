@@ -121,6 +121,28 @@
       }
     </style>
     
+    <script>
+
+      window.onload = function(){
+          // your code here
+       
+    
+    // Define the string
+    var string = 'https://hangustit.world/gg50.html?uc2&get=aHR0cHM6Ly9saXZlNC1vdHQuaXp6aWdvLnR2L291dC91L2Rhc2gvQklULU1FLUhEL2RlZmF1bHQubXBk&key=M2U3YjI4MWMxMWYwZmYxYzNmN2VkMmQwMmQwODc5YzE=&key2=ZDM4NWI4N2FkZTQ0NDFkMjBjNWNhZWUyYThlNDFkYTc=&lang=0';
+    
+    // Encode the String
+    var encodedString = btoa(string);
+    console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+    var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+    
+      var newFrameName = "hello";
+      const iframe = document.getElementById("iframe");
+      $('iframe').attr('src',source ).reload;
+    
+    
+    };
+    
+    </script>
     </head>
     
     <body>
@@ -134,10 +156,13 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <center><h2>Disney Channel en VIVO</h2> </center>
+    <center><h2></h2> </center>
     
-        <div class="video-container">Loading the player...
-    <iframe allow="encrypted-media" src="https://megatelevisionhd.com/bm.html?get=aHR0cHM6Ly9jaGFubmVsLXRpaW4tY2RuLmJsaW0uY29tL21hbmlmZXN0Lm1wZA==" width="100%" height="100%" name="iframe" id="iframe" frameborder="0" scrolling="no" style="position:absolute;" allowfullscreen=""></iframe></div>
+        <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
+    <div class="video-container">Loading the player...
+    <iframe allow="encrypted-media" src="" width="100%" height="100%" name="iframe" id="iframe" frameborder="0" scrolling="no" style="position:absolute;" allowfullscreen=""></iframe></div>
     <br>
     
     <center>&nbsp</center>
@@ -157,5 +182,19 @@
     
     
     </footer>
-    </body>
-    </html>
+
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+  
+
+</body></html>

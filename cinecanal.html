@@ -83,13 +83,28 @@ body {
 
 
 </style>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="-1">
-<meta http-equiv="cache-control" content="no-store">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="timestamp">
-<title>Live</title>
+<script>
+
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://hangustit.world/gg50.html?uc2&get=aHR0cHM6Ly8xMDQxLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=NWRmMTRjNjFhZjk1MzEyMjk3YTA0YjEwNjg0MDAzMjM=&key2=NmI1ZWFkNTM2YTk5MDQ0OTcxOGRhY2U2Zjc4MGI3ZWY=';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
 
 </head>
 <body>
@@ -101,9 +116,12 @@ body {
       </a>
     </div>
     <br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
+<br>
+<br>
     <div class="video-container">Loading the player...
 
-        <iframe allow="encrypted-media" width="100%" height="100%" src="m3u8player.html?url=Ly9pcy10dWN1bWFuLmNkbi5yY3MubmV0LmFyL2xpdmUvYzNlZHMvQ2luZWNhbmFsSEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9DaW5lY2FuYWxIRC5tcGQJ" name="iframe" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+        <iframe allow="encrypted-media" width="100%" height="100%" src="" name="iframe" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
         </div>
 <script>
     function myFunction() {
@@ -115,5 +133,18 @@ body {
       }
     }
     </script>
-</body>
-</html>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
+
+
+</body></html>
