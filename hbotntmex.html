@@ -125,12 +125,12 @@
                    
                 
                 // Define the string
-                var string = 'https://mondialo.pages.dev/playerjw.html?get=aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yOTQ0Ny9tYXN0ZXIubXBk&k1=MDEwMTQwOWM3YzIxODFjMTY1MGIyNzIzNWZmODMzNzE=&k2=NjZjNzZjYmM0ZWU1ZTNkNjc4ZWNhNmE5MDRhYTA5YzA=';
+                var string = 'https://mondialo.pages.dev/playerjw.html?get=aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yOTQ0Ny9tYXN0ZXIubXBk&key=MDEwMTQwOWM3YzIxODFjMTY1MGIyNzIzNWZmODMzNzE=&key2=NjZjNzZjYmM0ZWU1ZTNkNjc4ZWNhNmE5MDRhYTA5YzA=';
                 
                 // Encode the String
                 var encodedString = btoa(string);
                 console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
-                var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+                var source = "https://mondialo.pages.dev/repro.html?r="+encodedString;
                 
                   var newFrameName = "hello";
                   const iframe = document.getElementById("iframe");
