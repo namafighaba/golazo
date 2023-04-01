@@ -16,8 +16,8 @@
 
 var getURL = getParameterByName('get');
 var getIMG = getParameterByName('img');
-var getk1  = getParameterByName('key');
-var getk12  = getParameterByName('key2');
+var getKEY  = getParameterByName('key');
+var getKEY2  = getParameterByName('key2');
 
    </script>
 
@@ -36,33 +36,34 @@ var getk12  = getParameterByName('key2');
    </head>
    <div id="player"></div>
    <script>
-
-var playerInstance=jwplayer("player");
-
-playerInstance.setup({
-
-    playlist: [{
-    "title": "DZA SPORTS",
-    "description": "EN VIVO",
-    "image": getIMG,
-      "sources": [
-        {
-          "default": true,
-          "type": "dash",
-          "file": atob(getURL),
-          "drm": {
-            "cleark1": {"keyId": atob(getk1), "key2": atob(getk12)}
-          },
-          "label": "0"
+    var playerInstance = jwplayer("player");
+    
+        playerInstance.setup({
+    
+            playlist: [{
+                "sources": [
+                    {
+                        "default": false,
+                        "type": "dash",
+                        "file": atob(getURL),
+                        "drm": {
+                            "clearkey": { "keyId": atob(getKEY), "key": atob(getKEY2)}
+                        },
+                        "label": "0"
+                    }
+                ]
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: false,
+            cast: {},
+            sharing: {}
+        });
+        if (getLang == "") {
+          lang = 1;
         }
-      ]
-    }],
-    width: "100%",
-    height: "100%",
-    aspectratio: "16:9",
-    autostart: false,
-    cast: {}
-  
-});
-
-   </script>
+        jwplayer().on('play', function(e) {
+          jwplayer().setCurrentAudioTrack(lang);
+        }); 
+    </script>
